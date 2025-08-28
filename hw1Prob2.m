@@ -18,9 +18,13 @@ beq = [10]
 A = [
     1, -2;
     -2, 1;
-    2300, 600
+    2300, 600 % this constraint makes it so there are no solutions at all
     ]
-b = [0; 0; 10000] 
+b = [
+    0; 
+    0; 
+    10000 % this constraint makes it so there are no solutions at all
+    ] 
 
 % our bounds, and in this case, we are only sending through 1 unit, so the
 % upperbound is just a one vector, the lower is zeros.
